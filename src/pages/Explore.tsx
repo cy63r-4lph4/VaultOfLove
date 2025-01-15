@@ -16,7 +16,7 @@ interface StoryItem {
 const ExplorePage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState("trending");
-  const [stories, setStories] = useState(dummyStories);
+  const [stories] = useState(dummyStories);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
